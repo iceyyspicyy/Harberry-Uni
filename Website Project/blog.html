@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HARBERRY UNIVERSITY - About</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>    <!--Fonts imported from GOOGLE FONTS-->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"><!---fonts from g-search 'Font awesome 4 CDN' -->
+</head>
+<body>
+<section class="sub-header">
+    <nav>
+    <a href="index.html"><img src="images/logo.png"></a>
+        <div class="nav-links" id="navLinks">                              <!---we've added Javascript for button functions belowlike hideMenu() and showMenu()-->
+            <i class="fa fa-times" onclick="hideMenu()"></i> <!---'Close icon' this is copied from Font Awesome 4 icons which is placed where you need the icon to appear, fyi aria part is removed-->             <!---https://fontawesome.com/v4.7/icon-->
+            <ul>
+                <li><a href="index.html">HOME</a></li>    <!---headers-->
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="course.html">COURSE</a></li>
+                <li><a href="event.html">BLOG</a></li>
+                <li><a href="contact.html">CONTACT</a></li> 
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i> <!---second icon placed 'Menu'-->
+    </nav>
+    <h1>Our Blogs</h1>
+</section>
+
+
+<!------------Blog------------->
+<section class="blog-content">
+    <div class="row">
+        <div class="blog-left">
+            <img src="images/certificate.jpg">
+            <h2> Our Certificate & Online Programs for 2022</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas, neque laboriosam! Sapiente totam aut atque, nesciunt optio harum sit, alias deserunt explicabo illo, recusandae eum eaque aliquid. Nesciunt, veritatis neque?</p>
+            <br>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus quod voluptatem ex vero ut, dolore perferendis adipisci inventore iure repellendus nesciunt mollitia exercitationem eum voluptatum beatae ullam voluptatibus, nemo nobis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt at ullam perspiciatis tempora ab explicabo nisi alias quidem ea obcaecati itaque in necessitatibus adipisci similique sit assumenda ratione, velit sapiente.</p>
+            <br>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque veritatis voluptates enim dolorem distinctio quasi repudiandae quia quas harum. Atque provident totam rerum ex dignissimos illum repellendus minus ducimus commodi. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio minus aut eveniet et? Vero quae corrupti possimus est delectus labore nostrum vel, incidunt rerum ut earum recusandae fuga. Cupiditate, ad.</p>
+            <br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente rerum omnis sequi, illo voluptatibus eum quas ullam non maiores maxime culpa eius nemo. Maiores accusamus iste soluta odit eligendi veniam!</p>
+            <br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos sequi pariatur dicta illum velit libero? Repellendus debitis autem hic, optio incidunt quia fuga aliquid quidem praesentium sapiente, repudiandae quasi odio?</p>
+            
+            <div class="comment-box">
+                <h3> Leave a comment </h3>
+                <form class="comment-form">
+                    <input type="text" placeholder="Enter Name">
+                    <input type="email" placeholder="Enter Email">
+                    <textarea rows="5" placeholder="Your comment"></textarea>
+                    <butto type="submit" class="hero-btn red-btn"> POST COMMENT </butto>
+                </form>
+            </div>
+       
+       
+       
+       
+       
+        </div>
+        <div class="blog-right">
+            <h3>Post Categories</h3>
+            <div>
+                <span>Business Analytics</span>
+                <span>21</span>
+            </div>
+            <div>
+                <span>Data Science</span>
+                <span>28</span>
+            </div>
+            <div>
+                <span>Machine Learning</span>
+                <span>15</span>
+            </div>
+            <div>
+                <span>Computer Science</span>
+                <span>34</span>
+            </div>
+            <div>
+                <span>AutoCAD</span>
+                <span>42</span>
+            </div>
+            <div>
+                <span>Journalism</span>
+                <span>22</span>
+            </div>
+            <div>
+                <span>Commerce</span>
+                <span>30</span>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<!-------------Footer--------------->
+
+<section class="footer">
+    <h4>About Us</h4>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>In exercitationem non sint tempora voluptatem inventore.
+    </p>
+    <div class="icons">
+        <i class="fa fa-facebook-square" ></i>
+        <i class="fa fa-instagram" ></i>
+        <i class="fa fa-youtube-square" ></i>
+        <i class="fa fa-twitter" ></i>
+        <i class="fa fa-linkedin" ></i>
+    </div>
+    <p>Made with <i class="fa fa-heart-o"></i> </p>
+</section>
+
+
+<!---below JavaScript addition for ToggleMenu -->
+<script>    
+    var navLinks = document.getElementById("navLinks"); 
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    
+    function hideMenu(){
+        navLinks.style.right ="-200px";
+    }
+</script>
+
+</body>
+</html>

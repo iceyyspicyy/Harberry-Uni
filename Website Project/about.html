@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HARBERRY UNIVERSITY - About</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>    <!--Fonts imported from GOOGLE FONTS-->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"><!---fonts from g-search 'Font awesome 4 CDN' -->
+</head>
+<body>
+<section class="sub-header">
+    <nav>
+    <a href="index.html"><img src="images/logo.png"></a>
+        <div class="nav-links" id="navLinks">                              <!---we've added Javascript for button functions belowlike hideMenu() and showMenu()-->
+            <i class="fa fa-times" onclick="hideMenu()"></i> <!---'Close icon' this is copied from Font Awesome 4 icons which is placed where you need the icon to appear, fyi aria part is removed-->             <!---https://fontawesome.com/v4.7/icon-->
+            <ul>
+                <li><a href="index.html">HOME</a></li>    <!---headers-->
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="course.html">COURSE</a></li>
+                <li><a href="blog.html">BLOG</a></li>
+                <li><a href="contact.html">CONTACT</a></li> 
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i> <!---second icon placed 'Menu'-->
+    </nav>
+    <h1>About Us</h1>
+</section>
+
+<!----about us content---->
+<section class="about-us">
+    <div class="row">
+        <div class="about-col">
+            <h1>We are the world's largest university</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe incidunt, expedita quo maxime soluta necessitatibus excepturi nemo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, aspernatur illum dolore nisi quidem sint eos natus laborum reiciendis ex provident accusamus asperiores quas, sunt consequatur, maxime ducimus. Ratione, a! Nihil recusandae voluptatem harum doloremque nam rem! Quibusdam est assumenda molestiae sed obcaecati. At dolor optio tempora quae aliquam odit labore corporis, ea ipsa vel ut voluptatem ipsum praesentium, sed iure corrupti culpa ad neque?</p>
+            <a href="" class="hero-btn red-btn">EXPLORE NOW</a>
+        </div>
+        <div class="about-col">
+            <div style="text-align:center"> 
+                <button onclick="playPause()">Play/Pause</button> 
+                <br><br>
+                <video id="video1" width="420">
+                  <source src="images/college-tour.mp4" type="video/mp4">
+                  Your browser does not support HTML video.
+                </video>
+            </div> 
+              
+        </div>
+    </div>
+</section>
+
+<script> 
+    var myVideo = document.getElementById("video1"); 
+    
+    function playPause() { 
+      if (myVideo.paused) 
+        myVideo.play(); 
+      else 
+        myVideo.pause(); 
+    } 
+    
+</script> 
+    
+
+
+
+<!------------Footer--------------->
+
+<section class="footer">
+    <h4>About Us</h4>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>In exercitationem non sint tempora voluptatem inventore.
+    </p>
+    <div class="icons">
+        <i class="fa fa-facebook-square" ></i>
+        <i class="fa fa-instagram" ></i>
+        <i class="fa fa-youtube-square" ></i>
+        <i class="fa fa-twitter" ></i>
+        <i class="fa fa-linkedin" ></i>
+    </div>
+    <p>Made with <i class="fa fa-heart-o"></i> </p>
+</section>
+
+
+    <!---below JavaScript addition for ToggleMenu -->
+<script>    
+    var navLinks = document.getElementById("navLinks"); 
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    
+    function hideMenu(){
+        navLinks.style.right ="-200px";
+    }
+</script>
+
+</body>
+</html>
