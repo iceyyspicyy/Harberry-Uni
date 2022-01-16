@@ -1,0 +1,10 @@
+at about us, lets put all members description along with their roll nos.
+
+change the background colors for the home page for other menu parts
+ 
+add videos and pictures
+#sam
+#praj
+#paven
+#prem
+#me
